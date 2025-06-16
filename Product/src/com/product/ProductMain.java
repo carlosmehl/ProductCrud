@@ -39,8 +39,8 @@ public class ProductMain {
 					product.addProducts();
 					break;
 				case 2: 
-					System.out.print("Enter the number of products to be removed in stock:");
-					System.out.print("Entre com o número de produtos a serem removidos do estoque:");
+					System.out.println("Enter the number of products to be removed in stock:");
+					System.out.println("Entre com o número de produtos a serem removidos do estoque:");
 					product.setQuantity(scanner.nextInt());
 					product.removeProducts();
 					break;
@@ -71,6 +71,9 @@ public class ProductMain {
 					break;
 			}
 		}while(select != 5);
+		
+		//System.out.println(product);
+		
 		scanner.close();
 	}
 }

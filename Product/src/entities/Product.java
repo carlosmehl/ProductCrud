@@ -28,6 +28,17 @@ public class Product {
 		System.out.println("A quantidade atualizada de produtos desse tipo em estoque é: "+this.getTotalQuantity());
 		System.out.println("The current quantity of products of this type in stock is: "+this.getTotalQuantity());
 	}
+	/*To String*/
+	public String toString() {
+		return name
+				+", $ "
+				+String.format("%.2f",price)
+				+", "
+				+quantity
+				+" units, Total: $ "
+				+String.format("%.2f",totalValueInStock())
+				;
+	}
 	
 	/*Getters e Setters*/
 	public String getName() {
